@@ -33,6 +33,7 @@ str(data)
 str(data$previous_appointment)
 table(data$previous_appointment)
 
+
 data$previous_appointment[data$previous_appointment %in% c("YES","yes","Yes")]="Yes"
 data$previous_appointment[data$previous_appointment %in% c("No","NO","")]="No"
 table(data$previous_appointment)
