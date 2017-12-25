@@ -31,7 +31,6 @@ table(data$previous_appointment)
 data$previous_appointment[data$previous_appointment %in% c("YES","yes","Yes")]="Yes"
 data$previous_appointment[data$previous_appointment %in% c("No","NO","")]="No"
 table(data$previous_appointment)
-
 str(data)
 #Just another way of merging two variables
 data$categories =  mapvalues(data$categories,from = c("asK_A_DOCTOR","mISCELLANEOUS","JUNK"),
